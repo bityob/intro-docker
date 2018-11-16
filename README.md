@@ -30,20 +30,112 @@ Notes:
 
 ---
 
-### What is a Micro Service
+### What is a Monolitic Service
 
-- TBD
+![Monolithic Service Architecture](https://bits.citrusbyte.com/images/posts/2015-08-24-microservices-monolith.png)
 
-Note: 
+###### Source: https://bits.citrusbyte.com/microservices/
 
-Describe what is a micro service 
+Notes: 
+
+Source: https://bits.citrusbyte.com/microservices/
 
 ---
 
-### Why to use Conatiners
+### Strengths of the Monolithic Architecture
+
+- Less cross-cutting concerns
+- Easier debugging and testing
+- Simple to deploy
+
+Notes: 
+
+https://www.n-ix.com/microservices-vs-monolith-which-architecture-best-choice-your-business/
+
+- Cross-cutting concerns are the concerns that affect the whole application such as logging, handling, caching, and performance monitoring. Only one application so it is easier to handle it.
+- Since a monolithic app is a single indivisible unit, you can run end-to-end testing much faster.
+- Easier deployment. When it comes to monolithic applications, you do not have to handle many deployments - just one file or directory.
+
+---
+
+### Weaknesses of the Monolithic Architecture
+
+
+- Understanding
+- Making changes
+- Scalability
+- New technology barriers
+
+Notes: 
+
+https://www.n-ix.com/microservices-vs-monolith-which-architecture-best-choice-your-business/
+
+- When a monolithic application scales up, it becomes too complicated to understand
+- It is harder to implement changes in such a large and complex application with highly tight coupling. Any code change affects the whole system so it has to be thoroughly coordinated. This makes the overall development process much longer.
+- Scalability. You cannot scale components independently, only the whole application.
+- New technology barriers. It is extremely problematic to apply a new technology in a monolithic application because then the entire application has to be rewritten.
+
+---
+
+### What is a Micro Service
+
+![Micro Services vs Monlithic Service](img/mono_vs_micro.png)
+
+##### Source: [Medium/startlovingyourself](https://medium.com/startlovingyourself/microservices-vs-monolithic-architecture-c8df91f16bb4)
+
+Note: 
+
+- Describe what is a micro service 
+- After we explained what is a monolithic service, we can see how differ are micro services
+- No only one service which does everything, but multiple service, each with it's own responsibility
+- Easy to scale, easy to develop each part
+
+---
+
+### Why Micro-services?
+
+- Single Responsibility Principle
+- Application is easier to understand, develop and test
+- Allows high scalability and reusability
+- Parallelizes development
+- Enable continuous delivery and deployment
+- Better fault isolation
+- Code can be written in different languages
+
+
+Note: 
+
+Source: 
+
+Idan's vNext Architecture presentation - 
+https://microsoft.sharepoint.com/teams/osg_core_ens/wcd/Shared%20Documents/Architecture/WD%20ATP%20vNext%20Architecture.pptx
+
+---
+
+### Micro Services using Containers
+
+![Micro Services using Containers](img/img_microservices_cube.jpg)
+
+##### Source: [RedbadgerTeam](https://blog.red-badger.com/blog/deploy-a-microservices-application-as-though-it-was-a-monolith)
+
+Notes: 
+
+- Containers are a technology which best fit to this need of micro services
+- What are containers? 
+
+Links - 
+
+https://blog.red-badger.com/blog/deploy-a-microservices-application-as-though-it-was-a-monolith
+http://blog.enabled.com.au/microservices-innovation/
+
+---
+
+### What are Containers
+
+- Explain shortly what is a container
+- Adoption in the injustry 
 
 - TBD
-
 
 ---
 
@@ -53,11 +145,13 @@ Describe what is a micro service
 
 > Docker allows you to package an application with all of its dependencies into a standardized unit for software development.
 
+Notes:
+
+- Docker is a container implementaion
+
 ---
 
 ### Docker vs VMs
-
-<!-- .slide: data-background="#dddddd" -->
 
 ![Docker vs traditional Virtualization](https://insights.sei.cmu.edu/assets/content/VM-Diagram.png)
 
@@ -428,6 +522,13 @@ docker load < myapache_image.tar
  - [Docker in Practice](https://www.manning.com/books/docker-in-practice), [The Docker Book](http://www.dockerbook.com/) (books)
  - [Docker aliases/shortcuts](https://github.com/theodorosploumis/docker-presentation/tree/gh-pages/examples/shortcuts/docker-aliases.sh)
  - Docker [case studies](https://www.docker.com/customers)
+
+---
+
+### Instead of Resources
+
+ - [MonolithFirst](https://martinfowler.com/bliki/MonolithFirst.html)
+
 
 ---
 
