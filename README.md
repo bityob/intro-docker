@@ -4,29 +4,28 @@
 
 #### Micro-Services Academy, November 2018
 
-###### [Yonatan Bitton](mailto:yobitton@microsoft.com)
+###### [Yonatan Bitton](mailto:yobitton@microsoft.com)/[@bityob](http://www.twitter.com/bityob)
 
 ---
 
 ### Let me ask you
 
-- Who heard about Micro Services?
-- Who knows about [Docker](http://docker.com)?
-- Who uses Docker for development?
-- Who uses Docker in production?
-- Who tried but could not do it?
+- Who heard about Micro Services?   <!-- .element: class="fragment" -->
+- Who knows about Docker?           <!-- .element: class="fragment" -->
+- Who uses Docker for development?  <!-- .element: class="fragment" -->
+- Who uses Docker in production?    <!-- .element: class="fragment" -->
+- Who tried but could not do it?    <!-- .element: class="fragment" -->
 
 Notes: 
 
-- Need to think what questions are relvant 
+- Update questions 
 
 
 ---
 
 ### What is a Monolitic Service
 
-> In software engineering, a monolithic application describes a <strong>single-tiered software</strong> application in which the... code are combined into a single program from a single platform.
-
+> In software engineering, a monolithic application describes a <strong>single-tiered software</strong> application... code are combined into a single program from a single platform.
 
 
 ---
@@ -41,7 +40,7 @@ Describe what is a micro service
 
 ---
 
-### What to use conatiners
+### Why to use Conatiners
 
 - TBD
 
@@ -437,4 +436,4 @@ docker load < myapache_image.tar
 ![Docker logo](img/docker_logo.png)
 
 
-###### In this presentation I have used prevoius presentations ([theodorosploumis](https://github.com/theodorosploumis/docker-presentation)).
+###### In this presentation I used [Reveal.js](https://revealjs.com/#/) and slides/ideas from [theodorosploumis](https://github.com/theodorosploumis/docker-presentation).
