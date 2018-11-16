@@ -43,11 +43,15 @@
 			<!-- Any section element inside of this container is displayed as a slide -->
 			<div class="slides markdown-slides">
 				<section data-markdown="readme.md"
-                         data-separator="^\n---\n"
+                         data-separator="^\r?\n---\r?\n"
                          data-vertical="^\n--\n"
                          data-notes="^Note:"
                          data-charset="iso-8859-15">
-        </section>
+                    <!--
+				        Note that Windows uses `\r\n` instead of `\n` as its linefeed character.
+				        For a regex that supports all operating systems, use `\r?\n` instead of `\n`.
+   					-->
+        		</section>
 			</div>
 
 		</div>
