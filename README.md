@@ -29,8 +29,6 @@ Notes:
 
 ![Monolithic Service Architecture](https://bits.citrusbyte.com/images/posts/2015-08-24-microservices-monolith.png)
 
-###### Source: https://bits.citrusbyte.com/microservices/
-
 Notes: 
 
 Source: https://bits.citrusbyte.com/microservices/
@@ -320,7 +318,7 @@ Notes:
 
 - Demo
 
-docker run -p -d 8080:80 nginx
+docker run -d -p 8080:80 nginx
 
 http://localhost:8080
 
@@ -341,14 +339,17 @@ Change file, see changes...
 Browser - http://localhost:8888/
 ---
 
-### Docker Images
+### Docker Common Commands
 
-![Docker Images](img/docker_images_small.png)
+![Docker Commands](img/docker_commands.png)
 
 
 Notes:
 
 - Demo
+
+- Images list
+- Nginx logs (detached, after access the page once)
 
 ---
 
@@ -400,7 +401,7 @@ Notes:
 
 Demo (from windows) - 
 
-docker run -p 5555:5000 docker.io/bityob/docker-python-app
+docker run --name webapp -p 5555:5000 docker.io/bityob/docker-python-app
 
 C:\WINDOWS\system32>docker run -p 5555:5000 docker.io/bityob/docker-python-app
 INFO: Started server process [6]
@@ -420,34 +421,15 @@ Notes:
 
 docker exec -it webapp bash
 
-
----
-
-### Common Docker Commands
-
-```
-// Images
-docker images
-docker pull [IMAGE] 
-docker push [IMAGE]
-
-// Containers
-docker run
-docker ps // docker ps -a, docker ps -l
-docker stop/start/restart [CONTAINER]
-docker rm [CONTAINER]
-```
-
 ---
 
 ### Instead of Resources
 
- - [Awesome Docker](https://github.com/veggiemonk/awesome-docker) (list of Docker resources & projects)
- - [Docker cheat sheet](https://github.com/wsargent/docker-cheat-sheet)
- - [Docker in Practice](https://www.manning.com/books/docker-in-practice), [The Docker Book](http://www.dockerbook.com/) (books)
+ - [Awesome Docker](https://github.com/veggiemonk/awesome-docker) (list of Docker resources)
+ - Docker cheat sheet ([GitHub](https://github.com/wsargent/docker-cheat-sheet), [Docker Pdf](https://www.docker.com/sites/default/files/Docker_CheatSheet_08.09.2016_0.pdf))
  - [Docker aliases/shortcuts](https://github.com/theodorosploumis/docker-presentation/tree/gh-pages/examples/shortcuts/docker-aliases.sh)
- - Docker [case studies](https://www.docker.com/customers)
- - [examples/tips](https://github.com/theodorosploumis/docker-presentation/tree/gh-pages/examples/tips)
+ - Docker Tips [examples/tips](https://github.com/theodorosploumis/docker-presentation/tree/gh-pages/examples/tips)
+ - Introduction to Docker (US PyCon 2016, [Slides](https://us.pycon.org/2016/site_media/media/tutorial_handouts/DockerSlides.pdf))
 
 ---
 

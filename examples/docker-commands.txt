@@ -1,1 +1,20 @@
-docker
+// List all images that are locally stored with the Docker engine
+docker images
+
+// Delete an image from the local image store
+docker rmi alpine:3.4
+
+// Stop a running container through SIGTERM
+docker stop web
+
+//Stop a running container through SIGKILL
+docker kill web
+
+// List the running containers
+docker ps
+
+// Delete container (using container name or id)
+docker rm web
+
+// Print the last 100 lines of a container’s logs
+docker logs --tail 100 web
