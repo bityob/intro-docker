@@ -154,6 +154,8 @@ Notes:
 >  By 2020, more than 50% of global organizations will be running containerized applications in production
 
 ##### Source: [Gartner](https://www.gartner.com/smarterwithgartner/6-best-practices-for-creating-a-container-platform-strategy/)
+
+
 ---
 
 ### What is Docker
@@ -329,6 +331,7 @@ http://localhost:8080
 
 ![Docker Run Nginx Mount](img/docker_run_nginx_mount.png)
 
+
 Notes: 
 
 - Demo
@@ -337,6 +340,7 @@ docker run -p 8888:80 -v c:/Users/yobitton/Documents/Code/presentations/intro-do
 Change file, see changes...
 
 Browser - http://localhost:8888/
+
 ---
 
 ### Docker Common Commands
