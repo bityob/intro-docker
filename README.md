@@ -4,7 +4,9 @@
 
 #### Micro-Services Academy, November 2018
 
-###### [Yonatan Bitton](mailto:yobitton@microsoft.com)/[@bityob](http://www.twitter.com/bityob)
+##### [Yonatan Bitton](mailto:yobitton@microsoft.com)/[@bityob](http://www.twitter.com/bityob)
+
+##### Link To Slides [bit.ly/introdocker](http://bit.ly/introdocker)
 
 ---
 
@@ -230,16 +232,14 @@ Control Groups -  limits an application to a specific set of resources.
 UnionFS -  It allows files and directories of separate file systems, known as branches, to be transparently overlaid, forming a single coherent file system
 Continer Format - All together
 
-
-
-
-###### See more at [Docker overview](https://docs.docker.com/engine/docker-overview/)
+https://docs.docker.com/engine/docker-overview/
 
 ---
 
 ### The Docker architecture
 
 ![Docker architecture](https://docs.docker.com/engine/images/architecture.svg)
+
 ###### See more at [Understanding docker](https://docs.docker.com/engine/understanding-docker/)
 
 Notes:
@@ -388,11 +388,20 @@ Notes:
 
 ### Build the image
 
-![Docker Build](img/docker_build.png)
+![Docker Build](img/docker_build_large.png)
+
+### Pull the image
+
+![Docker Pull](img/docker_pull.png)
+
+##### Repo Link [bit.ly/pythonweb](http://bit.ly/pythonweb)
 
 Notes: 
 
 docker build . -t docker.io/bityob/docker-python-app
+
+docker pull docker.io/bityob/docker-python-app
+
 
 ---
 
@@ -441,5 +450,6 @@ docker exec -it webapp bash
 
 ![Docker logo](img/docker_logo.png)
 
+##### Slides [bit.ly/introdocker](http://bit.ly/introdocker), Docker Repo [bit.ly/pythonweb](http://bit.ly/pythonweb)
 
 ###### In this presentation I used [Reveal.js](https://revealjs.com/#/) and slides/ideas from [theodorosploumis](https://github.com/theodorosploumis/docker-presentation).
