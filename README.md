@@ -343,7 +343,7 @@ Browser - http://localhost:8888/
 
 ### Docker Images
 
-![Docker Images](img/docker_images.png)
+![Docker Images](img/docker_images_small.png)
 
 
 Notes:
@@ -394,7 +394,7 @@ docker build . -t docker.io/bityob/docker-python-app
 
 ### Run the application using Docker
 
-![Docker Run App](img/docker_run_app.png)
+![Docker Run App](img/docker_run_app_name.png)
 
 Notes:
 
@@ -413,12 +413,15 @@ INFO: ('172.17.0.1', 48992) - "GET /favicon.ico HTTP/1.1" 404
 
 ### SSH into the container
 
-```
-docker run -it docker.io/bityob/docker-python-app /bin/bash
-```
+![Docker Exec Bash](img/docker_exec_bash.png)
+
+
+Notes:
+
+docker exec -it webapp bash
+
 
 ---
-
 
 ### Common Docker Commands
 
