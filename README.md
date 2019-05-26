@@ -10,6 +10,13 @@
 
 ---
 
+###  Docker commands for later
+
+![Docker commands for later](img/docker-cmd-for-later.png)
+
+
+---
+
 ### Agenda
 
 - Micro Services
