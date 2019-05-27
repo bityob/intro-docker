@@ -1,0 +1,15 @@
+docker run -d -p 8080:80 nginx
+
+docker run -p 8888:80 -v c:/Users/yobitton/Documents/Code/presentations/intro-docker/examples/nginx:/usr/share/nginx/html nginx
+
+
+cd c:/Users/yobitton/Documents/Code/presentations/intro-docker/examples/webapp
+wsl
+python3.6 app.py
+
+docker pull docker.io/bityob/docker-python-app
+
+docker run --name webapp -p 5555:5000 docker.io/bityob/docker-python-app
+
+docker exec -it webapp bash
+
