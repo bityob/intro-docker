@@ -1,15 +1,21 @@
+# Remove and stop all containers 
+docker stop $(docker ps -a -q)
+docker rm $(docker ps -a -q)
+
+# Nginx 
 docker run -d -p 8080:80 nginx
 
+# Nginx with mount
 docker run -p 8888:80 -v c:/Users/yobitton/Documents/Code/presentations/intro-docker/examples/nginx:/usr/share/nginx/html nginx
 
-
+# App installed on my machine
 cd c:/Users/yobitton/Documents/Code/presentations/intro-docker/examples/webapp
 wsl
 python3.6 app.py
 
+# Running the app on windows system using docker
 docker pull docker.io/bityob/docker-python-app
-
 docker run --name webapp -p 5555:5000 docker.io/bityob/docker-python-app
-
 docker exec -it webapp bash
+
 

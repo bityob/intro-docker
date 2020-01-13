@@ -2,7 +2,7 @@
 
 ## Introduction to Docker Containers
 
-#### Micro-Services Academy, May 2019
+#### Micro-Services Academy, January 2020
 
 ##### [Yonatan Bitton](mailto:yobitton@microsoft.com)/[@bityob](http://www.twitter.com/bityob)
 
