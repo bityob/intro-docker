@@ -8,6 +8,14 @@ docker run -d -p 8080:80 nginx
 # Nginx with mount
 docker run -p 8888:80 -v c:/Users/yobitton/Documents/Code/presentations/intro-docker/examples/nginx:/usr/share/nginx/html nginx
 
+# Example for docker commands
+docker images
+docker ps
+docker ps -a
+docker logs <container_id>
+docker stop <container_id>
+docker rm <container_id>
+
 # App installed on my machine
 cd c:/Users/yobitton/Documents/Code/presentations/intro-docker/examples/webapp
 wsl
@@ -16,6 +24,8 @@ python3.6 app.py
 # Running the app on windows system using docker
 docker pull docker.io/bityob/docker-python-app
 docker run --name webapp -p 5555:5000 docker.io/bityob/docker-python-app
-docker exec -it webapp bash
+
+# Show running commands from inside the container (ls, cat)
+docker exec -it webapp bash 
 
 

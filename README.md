@@ -89,7 +89,7 @@ Note:
 
 - Describe what is a micro service 
 - After we explained what is a monolithic service, we can see how differ are micro services
-- No only one service which does everything, but multiple service, each with it's own responsibility
+- Not only one service which does everything, but multiple services, each with it's own responsibility
 - Easy to scale, easy to develop each part
 
 ---
@@ -158,15 +158,6 @@ Notes:
 ---
 
 
-### Container Adoption 
-
->  By 2020, more than 50% of global organizations will be running containerized applications in production
-
-##### Source: [Gartner](https://www.gartner.com/smarterwithgartner/6-best-practices-for-creating-a-container-platform-strategy/)
-
-
----
-
 ### What is Docker
 
 > Docker is an open platform for developing, shipping, and running applications.
@@ -185,7 +176,7 @@ Notes:
 
 Notes:
 
-- Same kerenl for all apps
+- Same kernel for all apps
 
 ---
 
