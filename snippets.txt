@@ -1,6 +1,5 @@
 # Remove and stop all containers 
-docker stop $(docker ps -a -q)
-docker rm $(docker ps -a -q)
+docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
 
 # Nginx 
 docker run -d -p 8080:80 nginx
