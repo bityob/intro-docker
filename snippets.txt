@@ -1,3 +1,9 @@
+# Run presentation on my machine 
+cd presentations/intro-docker/
+python -m http.server
+http://localhost:8000
+
+
 # Remove and stop all containers 
 docker stop $(docker ps -a -q) && docker rm $(docker ps -a -q)
 

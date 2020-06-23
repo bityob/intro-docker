@@ -12,7 +12,16 @@
 
 ###  Docker commands for later
 
+
 ![Docker commands for later](img/docker-cmd-for-later.png)
+
+
+Notes:
+
+```bash
+docker pull docker.io/bityob/docker-python-app
+docker pull nginx
+```
 
 
 ---
@@ -277,6 +286,11 @@ but instead through the Docker client with the RESTful api or sockets.
 ![Docker distribution logo](img/docker_distribution.png)
 
 A (hosted) service containing repositories of images which responds to the Registry API.
+
+
+Notes:
+- Go to registry docker hub
+-
 
 ---
 
